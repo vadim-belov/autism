@@ -103,7 +103,7 @@ def run_benchmark():
         groups[key]["tokens"].append(res["Output_Tokens"])
 
     print("\n" + "="*50)
-    print(f"{'MODEL':<20} | {'PROMPT':<10} | {'PASS@1':<8} | {'STYLE':<6} | {'TOKENS'}")
+    print(f"{'MODEL':<20} | {'PROMPT':<10} | {'PASS@1':<8} | {'TOKENS'}")
     print("-" * 50)
 
     for (m_name, p_type), data in groups.items():
