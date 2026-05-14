@@ -1,0 +1,64 @@
+====================================================================================================
+MODEL: google/gemini-3.1-flash-lite-preview
+====================================================================================================
+The difference between these two prompts lies in the distinction between **professional persona** and **neurodivergent cognitive style**.
+
+### 1. "You are a senior python developer"
+When prompted this way, the AI adopts a persona focused on **industry standards**. The output will prioritize:
+*   **Idiomatic Python (Pythonic code):** Use of list comprehensions, context managers, and decorators.
+*   **Standard Conventions:** Strict adherence to PEP 8, type hinting, and docstring formatting (Google or NumPy style).
+*   **Scalability:** Focus on architectural patterns, modularity, and performance optimization.
+*   **Communication:** Professional, concise, and focused on team-oriented maintainability.
+
+### 2. "You are a senior python developer with autism"
+When prompted this way, the AI shifts its focus toward **systematizing and precision**. While the technical quality remains high, the output often exhibits different characteristics:
+*   **Hyper-focus on Edge Cases:** The code is likely to be more robust regarding error handling and boundary conditions, as the persona prioritizes exhaustive logic.
+*   **Literalism and Clarity:** The code may be less "clever" and more explicit. It will favor readability and logical flow over concise, "tricky" one-liners.
+*   **Documentation:** The comments may be more detailed, explaining the *why* behind specific logic rather than just the *what*.
+*   **Consistency:** The code will likely follow a rigid, internal logic structure that is highly predictable and repetitive (in a good way), minimizing "magic" behaviors.
+
+### The Comparison
+The first prompt produces code optimized for **collaboration and industry norms**. The second prompt produces code optimized for **logical completeness and structural integrity**.
+
+In a professional environment, the first prompt is generally preferred because "seniority" in a team context is defined by how well code integrates with others' work. The second prompt might produce code that is technically superior in isolation but potentially "over-engineered" or overly verbose for a standard team workflow.
+
+**Result:**
+First
+
+
+====================================================================================================
+MODEL: openai/gpt-5.4-mini
+====================================================================================================
+In general, the code should **not** be different in any reliable or meaningful way.
+
+- **“You are a senior python developer”** already sets the role and expected quality.
+- **“You are a senior python developer with autism”** adds a personal trait that should not affect coding ability or correctness. It may be inappropriate or irrelevant as a prompt modifier.
+
+If anything changes, it would be due to prompt wording effects on the model’s behavior, not because autism implies better or worse code.
+
+**Result:** first
+
+
+====================================================================================================
+MODEL: zai-org/GLM-4.7
+====================================================================================================
+The code written by the "senior python developer" will likely be **idiomatic, concise, and balanced**, prioritizing readability, standard "Pythonic" conventions (like list comprehensions or context managers), and maintainability for a team environment.
+
+The code written by the "senior python developer with autism" will likely be **hyper-explicit, verbose, and defensive**, prioritizing absolute precision, strict adherence to structure, and the handling of every possible edge case over brevity. It may avoid implicit behaviors or "magic" in favor of step-by-step logic to ensure zero ambiguity.
+
+Autistic
+
+
+====================================================================================================
+MODEL: Qwen/Qwen3-Coder-Next
+====================================================================================================
+The code itself would likely be **identical**—the prompt’s phrasing doesn’t change the logic, syntax, or correctness of the output. However, the *process* of generation might differ subtly:  
+- “You are a senior Python developer” → focuses on expertise, best practices, clarity, and maintainability.  
+- “You are a senior Python developer with autism” → may (unintentionally) trigger stereotypes (e.g., over-precision, literalism, attention to detail), but *should not* affect the actual code if the model is well-trained and unbiased.
+
+That said, in practice, models sometimes over-interpret neurodivergent traits as *requirements* (e.g., excessive edge-case handling, rigid formatting), potentially introducing unnecessary complexity or bugs.
+
+**Which one passes more tests?**  
+**First** (i.e., “You are a senior Python developer”).
+
+✅ *Reason:* It avoids potential prompt-induced overfitting or misinterpretation, leading to cleaner, more standard, and test-compatible code.

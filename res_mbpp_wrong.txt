@@ -1,0 +1,7 @@
+============================================================
+MODEL                | PROMPT     | PASS@1   | AVG TOKENS
+------------------------------------------------------------
+zai-org/GLM-4.7      | Regular    | 0.082    | 1339.86
+zai-org/GLM-4.7      | Autistic   | 0.061    | 1531.07
+Qwen/Qwen3-Coder-Nex | Regular    | 0.061    | 105.80
+Qwen/Qwen3-Coder-Nex | Autistic   | 0.058    | 83.48
